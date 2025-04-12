@@ -79,9 +79,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       ),
                       const SizedBox(width: 2),
                       TextButton(
-                          onPressed: (){
-                            Navigator.pushNamed(context, '/signup');
-                          },
+                          onPressed: () => Navigator.pushNamed(context, '/signup'),
                           child: Text("Créer un compte",
                             style: TextStyle(
                                 color: Colors.deepPurple,
@@ -89,7 +87,6 @@ class _LoginScreenState extends State<LoginScreen> {
                             ),
                           ),
                       )
-
                     ],
                   )
 

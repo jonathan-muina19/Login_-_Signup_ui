@@ -66,7 +66,7 @@ class _SignupScreenState extends State<SignupScreen> {
           // Re-enter password textfield
           MyTextfield(
               controller: ReusernameController,
-              hinttext: "Ressaisir mot de passe",
+              hinttext: "Ressaisir le mot de passe",
               obscuretext: !isVisible,
               prefixIcon: Icon(Icons.lock),
               suffixIcon: IconButton(
@@ -74,7 +74,6 @@ class _SignupScreenState extends State<SignupScreen> {
                   onPressed: (){
                     setState(() {
                       isVisible = !isVisible;
-
                     });
                   }
               )
@@ -99,9 +98,7 @@ class _SignupScreenState extends State<SignupScreen> {
               ),
               const SizedBox(width: 2),
               TextButton(
-                onPressed: (){
-                  Navigator.pushNamed(context, '/login');
-                },
+                onPressed: ()=> Navigator.pushNamed(context, '/login'),
                 child: Text("Connectez-vous",
                   style: TextStyle(
                       color: Colors.deepPurple,
